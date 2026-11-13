@@ -270,10 +270,10 @@
 <body>
   <header>
     <div class="brand">
-      <span class="gta-badge">GTA IV RAGE</span>
+      <span class="gta-badge">MTA:SA & GTA IV</span>
       <div>
-        <h1>استوديو تكسترات وجوه GTA IV لتصميم السكنات (20 Head Diffuse Atlas)</h1>
-        <p>متوافقة 100% مع إحداثيات UV الأصلية لملفات <code>head_diff_000_*.wtd</code> (OpenIV / SparkIV / 3ds Max GIMS IV / Blender)</p>
+        <h1>استوديو تكسترات وجوه GTA IV لتصميم سكنات MTA:SA (20 Open-Eyed Face Maps)</h1>
+        <p>بعيون طبيعية مفتوحة جاهزة لملفات <code>.txd / .dff</code> في MTA:SA (Magic.TXD / TXD Workshop / 3ds Max / Blender DragonFF) وكذلك GTA IV</p>
       </div>
     </div>
     <div class="zip-actions">
@@ -559,10 +559,8 @@
           v = 0.524 + ((t - 0.620) / 0.380) * (vBot - 0.524);
         }
 
-        // Punch open eye socket slit depth so 3D eyeballs shine through!
-        const hole = (Math.pow((s - 0.422) / 0.025, 2) + Math.pow((t - 0.415) / 0.014, 2) < 1.0) ||
-                     (Math.pow((s - 0.578) / 0.025, 2) + Math.pow((t - 0.415) / 0.014, 2) < 1.0);
-        return { x, y, z, u, v, hole };
+        // Solid eye surface for MTA:SA (.dff) painted-eye head skinning (no black holes!)
+        return { x, y, z, u, v, hole: false };
       }
 
       const grid = [];

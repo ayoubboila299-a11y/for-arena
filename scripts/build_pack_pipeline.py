@@ -161,6 +161,60 @@ def recolor_eyeball_iris(arr: np.ndarray, iris_rgb_inner, iris_rgb_outer):
     blend = ring_w * (1.0 - catchlight)
     box = box * (1.0 - blend[:, :, None]) + np.clip(new_iris, 0, 255) * blend[:, :, None]
     out[818:1024, 482:668] = np.clip(box, 0, 255)
+
+    # ALSO recolor BOTH open eyes on the face UV (for MTA:SA / GTA SA skinning!)
+    for x0, x1 in ((378, 452), (572, 646)):
+        y0, y1 = 324, 374
+        eb = out[y0:y1, x0:x1].copy()
+        eh, ew, _ = eb.shape
+        ey, ex = np.mgrid[0:eh, 0:ew].astype(np.float32)
+        elum = 0.299 * eb[:, :, 0] + 0.587 * eb[:, :, 1] + 0.114 * eb[:, :, 2]
+
+        # Locate exact circular pupil center via smoothed luminance minimum
+        sm = gaussian_filter(elum, sigma=2.5)
+        sub = sm[12:38, 18:56]
+        py, px = np.unravel_index(np.argmin(sub), sub.shape)
+        fcx, fcy = float(px + 18), float(py + 12)
+
+        # Measure pupil radius & horizontal iris outer radius (where sclera jumps > 84)
+        fr = np.hypot(ex - fcx, ey - fcy)
+        p_pix = (fr <= 9.0) & (elum < 22.0)
+        fpupil_r = max(4.2, min(7.2, math.sqrt(max(p_pix.sum(), 55) / math.pi)))
+
+        h_radii = []
+        for sgn in (-1, 1):
+            for rad in range(int(fpupil_r + 4), 23):
+                ix = int(round(fcx + sgn * rad))
+                iy = int(round(fcy))
+                if 0 <= ix < ew and elum[iy, ix] > 84.0:
+                    h_radii.append(rad)
+                    break
+        firis_r = float(np.median(h_radii)) if h_radii else 15.5
+
+        # Restrict strictly to visible iris ring inside the open eyelid almond aperture
+        almond_open = (((ex - fcx) / 27.0) ** 2 + ((ey - fcy) / 10.2) ** 2) <= 1.0
+        not_sclera = elum < 88.0
+        not_upper_lash = ~((ey - fcy < -5.5) & (elum < 30.0))
+        fin_ring = (fr >= fpupil_r + 0.6) & (fr <= firis_r - 0.4) & almond_open & not_sclera & not_upper_lash
+        fring_w = gaussian_filter(fin_ring.astype(np.float32), sigma=0.9)
+
+        elum_n = elum / 255.0
+        rvals = elum_n[fin_ring]
+        flo, fhi = (np.percentile(rvals, 10), np.percentile(rvals, 92)) if len(rvals) > 8 else (0.08, 0.35)
+        ffiber = np.clip((elum_n - flo) / max(fhi - flo, 0.06), 0.0, 1.0)
+        frad_t = np.clip((fr - fpupil_r) / max(firis_r - fpupil_r, 1.0), 0.0, 1.0)
+        flimbal = 1.0 - 0.52 * np.exp(-(((fr - (firis_r - 1.2)) / 1.8) ** 2))
+        # Natural upper-eyelid ambient shadow on top half of iris so eyes never look glowing/sticker-like!
+        upper_lid_ao = np.clip(0.72 + 0.28 * ((ey - (fcy - 6.0)) / 12.0), 0.58, 1.02)
+
+        fbase = inner_c[None, None, :] * (1.0 - frad_t[:, :, None]) + outer_c[None, None, :] * frad_t[:, :, None]
+        fnew = fbase * (0.42 + 0.78 * ffiber[:, :, None]) * flimbal[:, :, None] * upper_lid_ao[:, :, None]
+
+        fcatch = gaussian_filter((elum > 165.0).astype(np.float32), sigma=0.7)
+        fblend = fring_w * (1.0 - fcatch) * 0.88
+        eb = eb * (1.0 - fblend[:, :, None]) + np.clip(fnew, 0, 255) * fblend[:, :, None]
+        out[y0:y1, x0:x1] = np.clip(eb, 0, 255)
+
     return out
 
 
@@ -182,12 +236,11 @@ def skin_and_hair_grade(
     protected[810:1024, 350:670] = True
     protected[668:735, 0:150] = True
     protected[668:735, 868:1024] = True
-    # Also protect eye socket dark holes
-    eye_holes = (
-        (((XX - 414.0) / 38.0) ** 2 + ((YY - 350.0) / 18.0) ** 2 <= 1.0)
-        | (((XX - 610.0) / 38.0) ** 2 + ((YY - 350.0) / 18.0) ** 2 <= 1.0)
+    # Smoothly protect open eyes (sclera + iris + pupil) from skin tone shifts without any hard edge
+    eye_open_protect = np.maximum(
+        np.exp(-(((XX - 414.0) / 34.0) ** 4 + ((YY - 348.0) / 14.5) ** 4)),
+        np.exp(-(((XX - 610.0) / 34.0) ** 4 + ((YY - 348.0) / 14.5) ** 4)),
     )
-    protected |= eye_holes
 
     # Smooth continuous hair/beard/sideburn/brow zone across the entire head (ZERO rectangular cutoffs!)
     head_vert_env = np.clip((685.0 - YY) / 45.0, 0.0, 1.0)
@@ -215,9 +268,9 @@ def skin_and_hair_grade(
     desat_score = np.clip((skin_med_s - s) / max(skin_med_s, 0.15), 0.0, 1.0) * np.clip((skin_med_v * 0.96 - v) * 3.0, 0.0, 1.0)
     raw_hair = np.maximum(dark_score, desat_score * 0.75) * hair_env
     hair_mask = gaussian_filter(raw_hair, sigma=2.2)
-    hair_mask = np.clip(hair_mask * 1.25, 0.0, 1.0) * (~protected) * non_bg
+    hair_mask = np.clip(hair_mask * 1.25, 0.0, 1.0) * (~protected) * non_bg * (1.0 - eye_open_protect)
 
-    skin_mask = gaussian_filter((non_bg & (~protected)).astype(np.float32), sigma=2.0) * (1.0 - 0.75 * hair_mask)
+    skin_mask = gaussian_filter((non_bg & (~protected)).astype(np.float32), sigma=2.0) * (1.0 - 0.75 * hair_mask) * (1.0 - eye_open_protect)
 
     # Apply skin grading
     h_new = (h + skin_hue_shift * skin_mask) % 1.0

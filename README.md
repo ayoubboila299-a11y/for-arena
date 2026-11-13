@@ -34,7 +34,12 @@
 
 ## طريقة التركيب والاستخدام في تصميم السكنات
 
-### 1. عبر برنامج OpenIV أو SparkIV (تعديل `playerped.rpf` أو `componentpeds.img`)
+### 1. لتصميم سكنات MTA:SA و GTA San Andreas (`.txd` + `.dff`)
+جميع الـ 20 خامة أصبحت الآن **بعيون بشرية طبيعية مفتوحة ومفصّلة مدمجة مباشرة في جزء الوجه** (بدون تجاويف سوداء)، مما يجعلها جاهزة فوراً لتركيبها على رؤوس شخصيات **MTA:SA**:
+1. في **3ds Max (Kam's GTA Scripts)** أو **Blender (DragonFF)**: طبّق الخامة من مجلد `textures_512/` (خفيفة وسريعة لسيرفرات MTA) أو `textures_1024/` (لسكنات الـ HD) على مجسم الرأس واضبط الـ `UVW Unwrap` (يمكنك الاستعانة بملف `templates/gta4_uv_wireframe_1024.png`).
+2. افتح برنامج **Magic.TXD** أو **TXD Workshop** لملف الـ `.txd` الخاص بالسكن، واستورد صورة الـ `PNG` (بضغط `DXT1`) أو استورد ملف الـ `.dds` الجاهز مباشرة من `dds_512/` ثم احفظ الملف!
+
+### 2. عبر برنامج OpenIV أو SparkIV لـ GTA IV (`playerped.rpf` أو `componentpeds.img`)
 1. افتح **OpenIV** وانتقل إلى `pc/models/cdimages/componentpeds.img` (أو `playerped.rpf`) وفعّل **Edit Mode**.
 2. افتح ملف الـ `.wtd` الخاص بالشخصية (مثل `m_y_streetblk_03.wtd` أو `head_diff_000_a_whi.wtd`).
 3. اختر التكستر `head_diff_000_*` واضغط **Replace** ثم اختر ملف الـ `.png` من `textures_512/` (أو `textures_1024/` لمودات الـ HD) أو استورد ملف الـ `.dds` مباشرة من `dds_512/`.
