@@ -1,0 +1,493 @@
+[
+  {
+    "id": 1,
+    "filename": "01_head_diff_000_a_whi.png",
+    "gta_name": "head_diff_000_a_whi",
+    "title_en": "Slavic Ex-Soldier (Hove Beach)",
+    "title_ar": "محارب سلافي سابق - هوف بيتش",
+    "ethnicity": "whi",
+    "district": "Hove Beach, Broker",
+    "eye_color": "Hazel Green",
+    "source_type": "AI Base Generation",
+    "tags": [
+      "Slavic",
+      "Stubble",
+      "Brow Scar",
+      "Male"
+    ],
+    "files": {
+      "diffuse_1024": "textures_1024/01_head_diff_000_a_whi.png",
+      "diffuse_512": "textures_512/01_head_diff_000_a_whi.png",
+      "normal_512": "normals_512/01_head_normal_000_a_whi.png",
+      "spec_512": "specular_512/01_head_spec_000_a_whi.png",
+      "dds_512": "dds_512/01_head_diff_000_a_whi.dds"
+    }
+  },
+  {
+    "id": 2,
+    "filename": "02_head_diff_000_a_ara.png",
+    "gta_name": "head_diff_000_a_ara",
+    "title_en": "Maghrebi / Arab Street Hustler",
+    "title_ar": "شاب مغاربي / عربي - ستريت ستايل",
+    "ethnicity": "ara",
+    "district": "Dukes / Algonquin",
+    "eye_color": "Dark Brown",
+    "source_type": "AI Base Generation",
+    "tags": [
+      "Arab",
+      "Maghrebi",
+      "Fade",
+      "Goatee",
+      "Male"
+    ],
+    "files": {
+      "diffuse_1024": "textures_1024/02_head_diff_000_a_ara.png",
+      "diffuse_512": "textures_512/02_head_diff_000_a_ara.png",
+      "normal_512": "normals_512/02_head_normal_000_a_ara.png",
+      "spec_512": "specular_512/02_head_spec_000_a_ara.png",
+      "dds_512": "dds_512/02_head_diff_000_a_ara.dds"
+    }
+  },
+  {
+    "id": 3,
+    "filename": "03_head_diff_000_b_ara.png",
+    "gta_name": "head_diff_000_b_ara",
+    "title_en": "Arab Underground Crime Boss",
+    "title_ar": "زعيم عصابة عربي - ليبرتي سيتي",
+    "ethnicity": "ara",
+    "district": "Algonquin",
+    "eye_color": "Amber Brown",
+    "source_type": "AI Base Generation",
+    "tags": [
+      "Arab",
+      "Full Beard",
+      "Boss",
+      "Male"
+    ],
+    "files": {
+      "diffuse_1024": "textures_1024/03_head_diff_000_b_ara.png",
+      "diffuse_512": "textures_512/03_head_diff_000_b_ara.png",
+      "normal_512": "normals_512/03_head_normal_000_b_ara.png",
+      "spec_512": "specular_512/03_head_spec_000_b_ara.png",
+      "dds_512": "dds_512/03_head_diff_000_b_ara.dds"
+    }
+  },
+  {
+    "id": 4,
+    "filename": "04_head_diff_000_a_lat.png",
+    "gta_name": "head_diff_000_a_lat",
+    "title_en": "Dominican VIP Club Bouncer (TBoGT)",
+    "title_ar": "حارس نادي ليلي دومينيكاني - TBoGT",
+    "ethnicity": "lat",
+    "district": "Northwood / Maisonette 9",
+    "eye_color": "Rich Brown",
+    "source_type": "AI Base Generation",
+    "tags": [
+      "Latino",
+      "Razor Line",
+      "Chinstrap",
+      "Male"
+    ],
+    "files": {
+      "diffuse_1024": "textures_1024/04_head_diff_000_a_lat.png",
+      "diffuse_512": "textures_512/04_head_diff_000_a_lat.png",
+      "normal_512": "normals_512/04_head_normal_000_a_lat.png",
+      "spec_512": "specular_512/04_head_spec_000_a_lat.png",
+      "dds_512": "dds_512/04_head_diff_000_a_lat.dds"
+    }
+  },
+  {
+    "id": 5,
+    "filename": "05_head_diff_000_a_bla.png",
+    "gta_name": "head_diff_000_a_bla",
+    "title_en": "Bohan Street Hustler (360 Waves)",
+    "title_ar": "مقاتل شوارع بوهان - 360 ويفز",
+    "ethnicity": "bla",
+    "district": "Bohan",
+    "eye_color": "Deep Brown",
+    "source_type": "AI Base Generation",
+    "tags": [
+      "Black",
+      "360 Waves",
+      "Brow Slit",
+      "Goatee",
+      "Male"
+    ],
+    "files": {
+      "diffuse_1024": "textures_1024/05_head_diff_000_a_bla.png",
+      "diffuse_512": "textures_512/05_head_diff_000_a_bla.png",
+      "normal_512": "normals_512/05_head_normal_000_a_bla.png",
+      "spec_512": "specular_512/05_head_spec_000_a_bla.png",
+      "dds_512": "dds_512/05_head_diff_000_a_bla.dds"
+    }
+  },
+  {
+    "id": 6,
+    "filename": "06_head_diff_000_b_whi.png",
+    "gta_name": "head_diff_000_b_whi",
+    "title_en": "Italian-American Alderney Mob Capo",
+    "title_ar": "كابو المافيا الإيطالية - ألدرني",
+    "ethnicity": "whi",
+    "district": "Westdyke, Alderney",
+    "eye_color": "Chestnut Brown",
+    "source_type": "AI Base Generation",
+    "tags": [
+      "Mafia",
+      "Italian",
+      "Silver Temples",
+      "Male"
+    ],
+    "files": {
+      "diffuse_1024": "textures_1024/06_head_diff_000_b_whi.png",
+      "diffuse_512": "textures_512/06_head_diff_000_b_whi.png",
+      "normal_512": "normals_512/06_head_normal_000_b_whi.png",
+      "spec_512": "specular_512/06_head_spec_000_b_whi.png",
+      "dds_512": "dds_512/06_head_diff_000_b_whi.dds"
+    }
+  },
+  {
+    "id": 7,
+    "filename": "07_head_diff_000_c_whi.png",
+    "gta_name": "head_diff_000_c_whi",
+    "title_en": "Alderney Outlaw Biker (TLAD)",
+    "title_ar": "دراج عصابة ذا لوست - TLAD",
+    "ethnicity": "whi",
+    "district": "Acter, Alderney",
+    "eye_color": "Steel Blue",
+    "source_type": "AI Base Generation",
+    "tags": [
+      "Biker",
+      "Beard",
+      "Hand Tattoos",
+      "Nose Scar",
+      "Male"
+    ],
+    "files": {
+      "diffuse_1024": "textures_1024/07_head_diff_000_c_whi.png",
+      "diffuse_512": "textures_512/07_head_diff_000_c_whi.png",
+      "normal_512": "normals_512/07_head_normal_000_c_whi.png",
+      "spec_512": "specular_512/07_head_spec_000_c_whi.png",
+      "dds_512": "dds_512/07_head_diff_000_c_whi.dds"
+    }
+  },
+  {
+    "id": 8,
+    "filename": "08_head_diff_000_d_whi.png",
+    "gta_name": "head_diff_000_d_whi",
+    "title_en": "Irish-American Dukes Enforcer",
+    "title_ar": "منفذ أيرلندي - عائلة ديوكس",
+    "ethnicity": "whi",
+    "district": "Steinway, Dukes",
+    "eye_color": "Emerald Green",
+    "source_type": "AI Base Generation",
+    "tags": [
+      "Irish",
+      "Freckles",
+      "Red Beard",
+      "Male"
+    ],
+    "files": {
+      "diffuse_1024": "textures_1024/08_head_diff_000_d_whi.png",
+      "diffuse_512": "textures_512/08_head_diff_000_d_whi.png",
+      "normal_512": "normals_512/08_head_normal_000_d_whi.png",
+      "spec_512": "specular_512/08_head_spec_000_d_whi.png",
+      "dds_512": "dds_512/08_head_diff_000_d_whi.dds"
+    }
+  },
+  {
+    "id": 9,
+    "filename": "09_head_diff_000_b_bla.png",
+    "gta_name": "head_diff_000_b_bla",
+    "title_en": "Jamaican Yardie Veteran",
+    "title_ar": "مخضرم جامايكي - شوتلر",
+    "ethnicity": "bla",
+    "district": "Beechwood City, Broker",
+    "eye_color": "Warm Dark Brown",
+    "source_type": "AI Base Generation",
+    "tags": [
+      "Caribbean",
+      "Full Beard",
+      "Stern",
+      "Male"
+    ],
+    "files": {
+      "diffuse_1024": "textures_1024/09_head_diff_000_b_bla.png",
+      "diffuse_512": "textures_512/09_head_diff_000_b_bla.png",
+      "normal_512": "normals_512/09_head_normal_000_b_bla.png",
+      "spec_512": "specular_512/09_head_spec_000_b_bla.png",
+      "dds_512": "dds_512/09_head_diff_000_b_bla.dds"
+    }
+  },
+  {
+    "id": 10,
+    "filename": "10_head_diff_000_a_chi.png",
+    "gta_name": "head_diff_000_a_chi",
+    "title_en": "Algonquin Chinatown Triad Enforcer",
+    "title_ar": "منفذ عصابة الترياد - الحي الصيني",
+    "ethnicity": "chi",
+    "district": "Chinatown, Algonquin",
+    "eye_color": "Espresso Brown",
+    "source_type": "AI Base Generation",
+    "tags": [
+      "Asian",
+      "Triad",
+      "Cheek Scar",
+      "Male"
+    ],
+    "files": {
+      "diffuse_1024": "textures_1024/10_head_diff_000_a_chi.png",
+      "diffuse_512": "textures_512/10_head_diff_000_a_chi.png",
+      "normal_512": "normals_512/10_head_normal_000_a_chi.png",
+      "spec_512": "specular_512/10_head_spec_000_a_chi.png",
+      "dds_512": "dds_512/10_head_diff_000_a_chi.dds"
+    }
+  },
+  {
+    "id": 11,
+    "filename": "11_head_diff_000_e_whi.png",
+    "gta_name": "head_diff_000_e_whi",
+    "title_en": "Russian Bratva Hitman (Cold Slavic Variant)",
+    "title_ar": "قاتل مأجور روسي (براتفا) - عيون رمادية",
+    "ethnicity": "whi",
+    "district": "Firefly Island, Broker",
+    "eye_color": "Ice Slate Gray",
+    "source_type": "Studio Ped Variant",
+    "tags": [
+      "Russian",
+      "Bratva",
+      "Hand Tattoo",
+      "Cheek Scar",
+      "Male"
+    ],
+    "files": {
+      "diffuse_1024": "textures_1024/11_head_diff_000_e_whi.png",
+      "diffuse_512": "textures_512/11_head_diff_000_e_whi.png",
+      "normal_512": "normals_512/11_head_normal_000_e_whi.png",
+      "spec_512": "specular_512/11_head_spec_000_e_whi.png",
+      "dds_512": "dds_512/11_head_diff_000_e_whi.dds"
+    }
+  },
+  {
+    "id": 12,
+    "filename": "12_head_diff_000_c_ara.png",
+    "gta_name": "head_diff_000_c_ara",
+    "title_en": "Arab / Maghrebi Elder Boss (Salt & Pepper)",
+    "title_ar": "زعيم عربي / مغاربي مخضرم (شيب وقور)",
+    "ethnicity": "ara",
+    "district": "Castle Gardens, Algonquin",
+    "eye_color": "Hazel Olive",
+    "source_type": "Studio Ped Variant",
+    "tags": [
+      "Arab",
+      "Elder",
+      "Salt & Pepper",
+      "Full Beard",
+      "Male"
+    ],
+    "files": {
+      "diffuse_1024": "textures_1024/12_head_diff_000_c_ara.png",
+      "diffuse_512": "textures_512/12_head_diff_000_c_ara.png",
+      "normal_512": "normals_512/12_head_normal_000_c_ara.png",
+      "spec_512": "specular_512/12_head_spec_000_c_ara.png",
+      "dds_512": "dds_512/12_head_diff_000_c_ara.dds"
+    }
+  },
+  {
+    "id": 13,
+    "filename": "13_head_diff_000_d_ara.png",
+    "gta_name": "head_diff_000_d_ara",
+    "title_en": "Tunisian / Mediterranean Street Racer",
+    "title_ar": "متسابق شوارع تونسي / متوسطي",
+    "ethnicity": "ara",
+    "district": "South Bohan / Broker Bridge",
+    "eye_color": "Amber Green",
+    "source_type": "Studio Ped Variant",
+    "tags": [
+      "Tunisian",
+      "Arab",
+      "Sun-Bronzed",
+      "Scar",
+      "Male"
+    ],
+    "files": {
+      "diffuse_1024": "textures_1024/13_head_diff_000_d_ara.png",
+      "diffuse_512": "textures_512/13_head_diff_000_d_ara.png",
+      "normal_512": "normals_512/13_head_normal_000_d_ara.png",
+      "spec_512": "specular_512/13_head_spec_000_d_ara.png",
+      "dds_512": "dds_512/13_head_diff_000_d_ara.dds"
+    }
+  },
+  {
+    "id": 14,
+    "filename": "14_head_diff_000_b_lat.png",
+    "gta_name": "head_diff_000_b_lat",
+    "title_en": "South Bohan Underground Boxer (Bruised)",
+    "title_ar": "ملاكم شوارع لاتيني - آثار قتال",
+    "ethnicity": "lat",
+    "district": "Fortside, Bohan",
+    "eye_color": "Golden Hazel",
+    "source_type": "Studio Ped Variant",
+    "tags": [
+      "Latino",
+      "Boxer",
+      "Bruised",
+      "Battle-Worn",
+      "Male"
+    ],
+    "files": {
+      "diffuse_1024": "textures_1024/14_head_diff_000_b_lat.png",
+      "diffuse_512": "textures_512/14_head_diff_000_b_lat.png",
+      "normal_512": "normals_512/14_head_normal_000_b_lat.png",
+      "spec_512": "specular_512/14_head_spec_000_b_lat.png",
+      "dds_512": "dds_512/14_head_diff_000_b_lat.dds"
+    }
+  },
+  {
+    "id": 15,
+    "filename": "15_head_diff_000_c_bla.png",
+    "gta_name": "head_diff_000_c_bla",
+    "title_en": "Algonquin Veteran Detective (Graying Waves)",
+    "title_ar": "محقق مخضرم - ألغونكوين",
+    "ethnicity": "bla",
+    "district": "Middle Park East, Algonquin",
+    "eye_color": "Warm Amber",
+    "source_type": "Studio Ped Variant",
+    "tags": [
+      "Black",
+      "Detective",
+      "Graying",
+      "Veteran",
+      "Male"
+    ],
+    "files": {
+      "diffuse_1024": "textures_1024/15_head_diff_000_c_bla.png",
+      "diffuse_512": "textures_512/15_head_diff_000_c_bla.png",
+      "normal_512": "normals_512/15_head_normal_000_c_bla.png",
+      "spec_512": "specular_512/15_head_spec_000_c_bla.png",
+      "dds_512": "dds_512/15_head_diff_000_c_bla.dds"
+    }
+  },
+  {
+    "id": 16,
+    "filename": "16_head_diff_000_f_whi.png",
+    "gta_name": "head_diff_000_f_whi",
+    "title_en": "Commission Silver-Haired Don (Alderney)",
+    "title_ar": "دون المافيا الكهل ذو الشعر الفضي",
+    "ethnicity": "whi",
+    "district": "Leftwood, Alderney",
+    "eye_color": "Cool Blue-Gray",
+    "source_type": "Studio Ped Variant",
+    "tags": [
+      "Mafia Don",
+      "Silver Hair",
+      "Elder",
+      "Male"
+    ],
+    "files": {
+      "diffuse_1024": "textures_1024/16_head_diff_000_f_whi.png",
+      "diffuse_512": "textures_512/16_head_diff_000_f_whi.png",
+      "normal_512": "normals_512/16_head_normal_000_f_whi.png",
+      "spec_512": "specular_512/16_head_spec_000_f_whi.png",
+      "dds_512": "dds_512/16_head_diff_000_f_whi.dds"
+    }
+  },
+  {
+    "id": 17,
+    "filename": "17_head_diff_000_g_whi.png",
+    "gta_name": "head_diff_000_g_whi",
+    "title_en": "Outlaw Biker Road Captain (Sunburnt Enforcer)",
+    "title_ar": "قائد الدراجين المحترق بالشمس - TLAD",
+    "ethnicity": "whi",
+    "district": "Tudor, Alderney",
+    "eye_color": "Wolf Amber",
+    "source_type": "Studio Ped Variant",
+    "tags": [
+      "Biker",
+      "Road Captain",
+      "Sunburnt",
+      "Amber Eyes",
+      "Male"
+    ],
+    "files": {
+      "diffuse_1024": "textures_1024/17_head_diff_000_g_whi.png",
+      "diffuse_512": "textures_512/17_head_diff_000_g_whi.png",
+      "normal_512": "normals_512/17_head_normal_000_g_whi.png",
+      "spec_512": "specular_512/17_head_spec_000_g_whi.png",
+      "dds_512": "dds_512/17_head_diff_000_g_whi.dds"
+    }
+  },
+  {
+    "id": 18,
+    "filename": "18_head_diff_000_h_whi.png",
+    "gta_name": "head_diff_000_h_whi",
+    "title_en": "Blonde Dockworker / Street Brawler (Broker)",
+    "title_ar": "ملاكم الميناء الأشقر - بروكر",
+    "ethnicity": "whi",
+    "district": "BOABO, Broker",
+    "eye_color": "Ice Cerulean Blue",
+    "source_type": "Studio Ped Variant",
+    "tags": [
+      "Blonde",
+      "Brawler",
+      "Blue Eyes",
+      "Broker",
+      "Male"
+    ],
+    "files": {
+      "diffuse_1024": "textures_1024/18_head_diff_000_h_whi.png",
+      "diffuse_512": "textures_512/18_head_diff_000_h_whi.png",
+      "normal_512": "normals_512/18_head_normal_000_h_whi.png",
+      "spec_512": "specular_512/18_head_spec_000_h_whi.png",
+      "dds_512": "dds_512/18_head_diff_000_h_whi.dds"
+    }
+  },
+  {
+    "id": 19,
+    "filename": "19_head_diff_000_d_bla.png",
+    "gta_name": "head_diff_000_d_bla",
+    "title_en": "Yardie Elder Kingpin (Silver Beard & Scar)",
+    "title_ar": "زعيم الكاريبي المخضرم - ندبة وشيب",
+    "ethnicity": "bla",
+    "district": "Willis, Dukes",
+    "eye_color": "Deep Hazel Gold",
+    "source_type": "Studio Ped Variant",
+    "tags": [
+      "Yardie",
+      "Kingpin",
+      "Silver Beard",
+      "Scar",
+      "Male"
+    ],
+    "files": {
+      "diffuse_1024": "textures_1024/19_head_diff_000_d_bla.png",
+      "diffuse_512": "textures_512/19_head_diff_000_d_bla.png",
+      "normal_512": "normals_512/19_head_normal_000_d_bla.png",
+      "spec_512": "specular_512/19_head_spec_000_d_bla.png",
+      "dds_512": "dds_512/19_head_diff_000_d_bla.dds"
+    }
+  },
+  {
+    "id": 20,
+    "filename": "20_head_diff_000_b_chi.png",
+    "gta_name": "head_diff_000_b_chi",
+    "title_en": "Chinatown Triad Red-Pole Veteran",
+    "title_ar": "قائد الترياد المخضرم - الحي الصيني",
+    "ethnicity": "chi",
+    "district": "Cerveza Heights / Chinatown",
+    "eye_color": "Dark Amber",
+    "source_type": "Studio Ped Variant",
+    "tags": [
+      "Triad Boss",
+      "Silver Streaks",
+      "Brow Scar",
+      "Male"
+    ],
+    "files": {
+      "diffuse_1024": "textures_1024/20_head_diff_000_b_chi.png",
+      "diffuse_512": "textures_512/20_head_diff_000_b_chi.png",
+      "normal_512": "normals_512/20_head_normal_000_b_chi.png",
+      "spec_512": "specular_512/20_head_spec_000_b_chi.png",
+      "dds_512": "dds_512/20_head_diff_000_b_chi.dds"
+    }
+  }
+]
