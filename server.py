@@ -58,10 +58,10 @@ class StudioHandler(BaseHTTPRequestHandler):
         # Serve static asset directories safely
         rel = path.lstrip("/")
         safe_prefixes = ("textures_1024/", "textures_512/", "normals_512/", "specular_512/", "dds_512/", "templates/", "web/")
-        if rel == "GTA_IV_20_Face_Maps_Catalog.jpg" or rel.startswith(safe_prefixes):
+        if rel in ("GTA_IV_20_Face_Maps_Catalog.jpg", "GTA_IV_MTA_SA_20_Faces_Pack.zip") or rel.startswith(safe_prefixes):
             full = os.path.normpath(os.path.join(ROOT, rel))
             if full.startswith(ROOT) and os.path.isfile(full):
-                force_dl = qs.get("dl", ["0"])[0] == "1"
+                force_dl = qs.get("dl", ["0"])[0] == "1" or rel.endswith(".zip")
                 return self._serve_file(full, None, head_only, attachment=force_dl)
 
         self.send_response(404)
