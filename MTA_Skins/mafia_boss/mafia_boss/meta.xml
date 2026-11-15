@@ -1,0 +1,7 @@
+<meta>
+  <info name="mafia_boss - ID 124" author="MTA Skins" version="1.0" type="script" />
+  <script src="client.lua" type="client" />
+  <script src="server.lua" type="server" />
+  <file src="vmaff1.dff" />
+  <file src="vmaff1.txd" />
+</meta>

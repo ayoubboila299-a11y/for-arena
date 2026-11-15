@@ -1,0 +1,7 @@
+<meta>
+  <info name="port_commander - ID 281" author="MTA Skins" version="1.0" type="script" />
+  <script src="client.lua" type="client" />
+  <script src="server.lua" type="server" />
+  <file src="sfpd1.dff" />
+  <file src="sfpd1.txd" />
+</meta>
