@@ -6,15 +6,15 @@
 
 | الجزء | نطاق أرقام السكنات | ZIP |
 |---|---|---|
-| 01 | 1–40 | [تحميل](https://github.com/ayoubboila299-a11y/for-arena/releases/download/peds-original-names-v1/GTA-SA-Peds-OriginalNames-01.zip) |
-| 02 | 41–78 | [تحميل](https://github.com/ayoubboila299-a11y/for-arena/releases/download/peds-original-names-v1/GTA-SA-Peds-OriginalNames-02.zip) |
-| 03 | 79–114 | [تحميل](https://github.com/ayoubboila299-a11y/for-arena/releases/download/peds-original-names-v1/GTA-SA-Peds-OriginalNames-03.zip) |
-| 04 | 115–151 | [تحميل](https://github.com/ayoubboila299-a11y/for-arena/releases/download/peds-original-names-v1/GTA-SA-Peds-OriginalNames-04.zip) |
-| 05 | 152–186 | [تحميل](https://github.com/ayoubboila299-a11y/for-arena/releases/download/peds-original-names-v1/GTA-SA-Peds-OriginalNames-05.zip) |
-| 06 | 187–222 | [تحميل](https://github.com/ayoubboila299-a11y/for-arena/releases/download/peds-original-names-v1/GTA-SA-Peds-OriginalNames-06.zip) |
-| 07 | 223–257 | [تحميل](https://github.com/ayoubboila299-a11y/for-arena/releases/download/peds-original-names-v1/GTA-SA-Peds-OriginalNames-07.zip) |
-| 08 | 258–294 | [تحميل](https://github.com/ayoubboila299-a11y/for-arena/releases/download/peds-original-names-v1/GTA-SA-Peds-OriginalNames-08.zip) |
-| 09 | 295–312 | [تحميل](https://github.com/ayoubboila299-a11y/for-arena/releases/download/peds-original-names-v1/GTA-SA-Peds-OriginalNames-09.zip) |
+| 01 | 1–40 | [تحميل](new_archives/GTA-SA-Peds-OriginalNames-01.zip) |
+| 02 | 41–78 | [تحميل](new_archives/GTA-SA-Peds-OriginalNames-02.zip) |
+| 03 | 79–114 | [تحميل](new_archives/GTA-SA-Peds-OriginalNames-03.zip) |
+| 04 | 115–151 | [تحميل](new_archives/GTA-SA-Peds-OriginalNames-04.zip) |
+| 05 | 152–186 | [تحميل](new_archives/GTA-SA-Peds-OriginalNames-05.zip) |
+| 06 | 187–222 | [تحميل](new_archives/GTA-SA-Peds-OriginalNames-06.zip) |
+| 07 | 223–257 | [تحميل](new_archives/GTA-SA-Peds-OriginalNames-07.zip) |
+| 08 | 258–294 | [تحميل](new_archives/GTA-SA-Peds-OriginalNames-08.zip) |
+| 09 | 295–312 | [تحميل](new_archives/GTA-SA-Peds-OriginalNames-09.zip) |
 
 ## المحتوى والتنبيهات
 
