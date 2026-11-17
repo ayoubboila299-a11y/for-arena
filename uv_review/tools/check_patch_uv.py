@@ -30,7 +30,7 @@ rows = []
 pages = []
 font = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', 18)
 small = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', 15)
-for batch in range(1, 5):
+for batch in range(1, 7):
     with zipfile.ZipFile(args.review / f'UV-patch-batch-{batch:02d}.zip') as z:
         manifest = json.loads(z.read('manifest.json'))
         for item in manifest:
@@ -109,7 +109,7 @@ for batch in range(1, 5):
             pages.append(page)
             print(model, tri_count, crossings, covered, flush=True)
 with (args.review / 'patch-uv-triangle-analysis.csv').open('w', newline='') as f:
-    w = csv.DictWriter(f, fieldnames=rows[0].keys())
+    w = csv.DictWriter(f, fieldnames=rows[0].keys(), lineterminator='\n')
     w.writeheader()
     w.writerows(rows)
 pages[0].save(args.review / 'patch-uv-wireframes.pdf', save_all=True, append_images=pages[1:], resolution=130.0, quality=85)
